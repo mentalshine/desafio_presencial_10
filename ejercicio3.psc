@@ -1,18 +1,17 @@
-Algoritmo Ejercicio_3
-	Escribir "*** Hola***"
-	Escribir "Por favor ingrese un número y le diremos si es primo o no: "
+Algoritmo numero_primo
+	Escribir "------Determine si el Número Ingresado es Primo o No-------'
+	Escribir 'Ingrese un Número: '
 	Leer num
-	
-	Si num%num=0 y num%1=0 Entonces
-		Si num % 2 != 0 Entonces
-			Escribir "El número ingresado es primo"
+	cont= 0
+	Para i=1 Hasta num Con Paso 1 Hacer
+		Si num % i = 0 Entonces
+			cont = cont +1
+			
 		Fin Si
+	Fin Para
+	Si cont = 2 Entonces
+		Escribir 'El Número ingresado ' num ' es primo'
 	SiNo
-		
-		Escribir "El número ingresado no es primo"
+		Escribir 'El Número ingresado ' num ' No es primo'
 	Fin Si
-	
 FinAlgoritmo
-
-
-
